@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-xs-12">
+
+        <app-game-control (intervalFired)="onIntervalFired($event)"></app-game-control>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-6">
+
+       <app-odd *ngFor = "let i of oddNumbers" [number]="i"></app-odd>
+       <!--the binding between number and i is property binding-->
+       <!--number is located in the app.component.ts-->
+       <!--the value of i is assigned to the number at every iteration-->
+
+    </div>
+    <div class="col-xs-6">
+
+        <app-even *ngFor = "let iEven of evenNumbers" [number]="iEven"></app-even>
+
+    </div>
+    
+</div>
+
+
+
+<!--the intervalFired event will trigger the onIntervalFired() method-->
+<!--the onIntervalFired() method resides in the app.component.ts-->
