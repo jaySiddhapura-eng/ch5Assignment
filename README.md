@@ -1,5 +1,9 @@
 # Binding assignment
 
+## Table of Contents  
+* [Assignment](#Assignment)<br>
+* [Project Structure](#Project-Structure)<br>
+
 ## Assignment
 
 1. Create three new components: ```GameControl, Odd``` and ```Even```
